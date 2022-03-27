@@ -58,11 +58,13 @@
     require_once 'Truck.php';
     $truck = new Truck('green', 3, 'fuel', 5);
     
-
     $truck->getLoading = 40;
+    $truck->setCurrentSpeed = 20;
 
     //$truck->setloading = 5;
     echo $truck->fullLoading().'<br>';
+    echo $truck->forward();
+    echo $truck->brake();
     var_dump($truck);
 
 ?>
